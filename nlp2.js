@@ -1,7 +1,7 @@
 const { NlpManager } = require('node-nlp');
 const express = require('express')
 const app = express()
-const port = 3000
+const port = process.env.PORT || 4000
 var dataset = require('./qa.json');
 var cors = require('cors');
 var salient = require('salient');
