@@ -2,7 +2,7 @@
   "name": "hackathon-kmipn-2020",
   "version": "1.0.0",
   "engines": {
-    "node": "0.15.1"
+    "node": "10.15.1"
   },
   "description": "hackathon-kmipn-2020",
   "main": "nlp2.js",
