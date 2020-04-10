@@ -1,8 +1,9 @@
 const { NlpManager } = require('node-nlp');
 const express = require('express')
 const app = express()
-const port = process.env.PORT || 4000
+const port = process.env.PORT || 3000
 var dataset = require('./qa.json');
+var dataset_questions = require('./question.json');
 var cors = require('cors');
 var salient = require('salient');
 var glossary = new salient.glossary.Glossary();
@@ -95,10 +96,14 @@ for (let i = 0; i < dataset.length; i++) {
     manager.save();
 })();
 
+app.get('/questions',function(req,res){
+    return res.json(dataset_questions)
+});
+
 app.get('/',function(req,res){
     res.sendFile(path.join(__dirname+'/public/index.html'));
     //__dirname : It will resolve to your project folder.
-  });
+});
 
 app.post('/', async (req, res) => {
     

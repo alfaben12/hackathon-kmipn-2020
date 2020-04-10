@@ -3,7 +3,7 @@
 
 <head>
 	<meta charset="UTF-8">
-	<title>CodePen - Simple Chat UI</title>
+	<title>Natural Language Processing</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -175,10 +175,10 @@ body {
 	<section class="msger">
 		<header class="msger-header">
 			<div class="msger-header-title">
-				<i class="fas fa-comment-alt"></i> SimpleChat
+				<i class="fas fa-comment-alt"></i> Natural Language Processing
 			</div>
 			<div class="msger-header-options">
-				<span><i class="fas fa-cog"></i></span>
+				<span> <a href="https://hackathon-kmipn-2020.herokuapp.com/question"><i class="fas fa-list"></i></a></span>
 			</div>
 		</header>
 
@@ -243,6 +243,9 @@ body {
 								</div>
 							</div>`
 			$(".msger-chat").append(question)
+			$('.msger-chat').animate({
+							scrollTop: $('.msger-chat').get(0).scrollHeight
+						});
 			$.ajax({
 				url: 'https://hackathon-kmipn-2020.herokuapp.com/',
 				type: 'POST',
@@ -254,6 +257,7 @@ body {
 				cache: false,
 				beforeSend: function() {},
 				success: async function(response) {
+					$("#query").val("")
 					for (let i = 0; i < response.length; i++) {
 						let html = ``;
 						html += `
@@ -262,7 +266,7 @@ body {
 
 							<div class="msg-bubble">
 								<div class="msg-info">
-									<div class="msg-info-name">BOT</div>
+									<div class="msg-info-name">Assisten</div>
 									<div class="msg-info-time">`+ time +`</div>
 								</div>
 
@@ -287,6 +291,9 @@ body {
 						$(".msger-chat").find('#typing').remove()
 						$(".msger-chat").append(html)
 						await timer(2000);
+						$('.msger-chat').animate({
+							scrollTop: $('.msger-chat').get(0).scrollHeight
+						});
 					}
 				}
 			})

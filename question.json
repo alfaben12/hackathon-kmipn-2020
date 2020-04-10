@@ -1,0 +1,125 @@
+[
+	{
+		"question": ["hi", "hallo"]
+	},
+	{
+		"question": ["hallo apa kabar?"]
+	},
+	{
+		"question": ["baik", "sangat baik"]
+	},
+	{
+		"question": ["sangat buruk", "sedang sakit"]
+	},
+	{
+		"question": ["umur berapamu?", "umurmu berapa?", "umur?"]
+	},
+	{
+		"question": ["saya menginginkan", "saya beli sesuatu", "saya ingin membeli", "saya ingin beli", "saya butuh", "saya membutuhkan"]
+	},
+	{
+		"question": ["Siapa namamu?"]
+	},
+	{
+		"question": ["Siapa nama lengkapmu?"]
+	},
+	{
+		"question": ["Siapa nama panggilanmu?"]
+	},
+	{
+		"question": ["Dapatkah membantuku?"]
+	},
+	{
+		"question": ["Apakah berbahasa inggris?"]
+	},
+	{
+		"question": ["Senang berkenalan denganmu"]
+	},
+	{
+		"question": ["Bagaimana kabar keadaan?"]
+	},
+	{
+		"question": ["kamu tinggal dimana?","Dimanakah tinggalmu?"]
+	},
+	{
+		"question": ["Berapakah nomor teleponmu?"]
+	},
+	{
+		"question": ["Apakah pekerjaanmu?"]
+	},
+	{
+		"question": ["Dimanakah sekolahmu?"]
+	},
+	{
+		"question": ["Apakah cita-citamu?"]
+	},
+	{
+		"question": ["Apakah hobimu?"]
+	},
+	{
+		"question": ["Apakah status pernikahanmu?"]
+	},
+	{
+		"question": ["Darimanakah asalmu?"]
+	},
+	{
+		"question": ["Apakah kebangsaanmu?"]
+	},
+	{
+		"question": ["Berapa saudara yang miliki?"]
+	},
+	{
+		"question": ["Apakah memiliki binantang peliharaan?"]
+	},
+	{
+		"question": ["Apakah bisa menyetir?"]
+	},
+	{
+		"question": ["Apakah anda dapat mengendarai sepeda motor?"]
+	},
+	{
+		"question": ["Apakah punya SIM?"]
+	},
+	{
+		"question": ["warna apa yang suka?"]
+	},
+	{
+		"question": ["makanan apa yang suka?"]
+	},
+	{
+		"question": ["Lagu apa yang suka?"]
+	},
+	{
+		"question": ["Dimanakah biasanya berlibur?"]
+	},
+	{
+		"question": ["Berapa lama kau akan tinggal disini?"]
+	},
+	{
+		"question": ["Apa yang akan lakukan?"]
+	},
+	{
+		"question": ["Hari apakah hari ini?"]
+	},
+	{
+		"question": ["Siapakah aktor dan aktris idolamu?"]
+	},
+	{
+		"question": ["Film apa yang kamu sukai?"]
+	},
+	{
+		"question": ["Apakah kamu punya pacar?"]
+	},
+	{
+		"question": ["Olahraga apa yang kamu sukai?"]
+	},
+	{
+		"question": ["sekarang jam berapa?"]
+	},
+	{
+		"question": ["sekarang tanggal berapa?"]
+	},
+	{
+		"question": ["-#=_!@#$%^&*"]
+	}
+]

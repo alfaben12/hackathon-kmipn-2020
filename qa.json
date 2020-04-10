@@ -5,6 +5,11 @@
 		"type": "greeting"
 	},
 	{
+		"question": ["hallo apa kabar?"],
+		"answer": ["Aku baik baik saja"],
+		"type": "greeting"
+	},
+	{
 		"question": ["baik", "sangat baik"],
 		"answer": ["syukurlah"],
 		"type": "greeting_answer"
@@ -20,7 +25,7 @@
         "type": "old"
 	},
 	{
-		"question": ["saya menginginkan", "beli sesuatu", "saya ingin membeli", "saya ingin beli", "saya butuh", "saya membutuhkan"],
+		"question": ["saya menginginkan", "saya beli sesuatu", "saya ingin membeli", "saya ingin beli", "saya butuh", "saya membutuhkan"],
         "answer": ["Saya menemukan {{item}}", "{{item}} apakah ini yang maksud"],
         "type": "question"
 	},
@@ -75,7 +80,7 @@
 		"type": "profession"
 	},
 	{
-		"question": ["Dimanakah sekolah?"],
+		"question": ["Dimanakah sekolahmu?"],
 		"answer": ["saya tidak sekolah, saya belajar dari kondisi sebelumnya"],
 		"type": "school"
 	},
@@ -116,16 +121,16 @@
 	},
 	{
 		"question": ["Apakah bisa menyetir?"],
-		"answer": ["Belum, saya belum tidak bisa"],
+		"answer": ["Belum, saya belum bisa"],
 		"type": "car"
 	},
 	{
-		"question": ["Apakah anada dapat mengendarai sepeda motor?"],
+		"question": ["Apakah anda dapat mengendarai sepeda motor?"],
 		"answer": ["Belum, saya belum bisa"],
 		"type": "motorcycle"
 	},
 	{
-		"question": ["Apakah punya Surat Izin Mengemudi?"],
+		"question": ["Apakah punya SIM?"],
 		"answer": ["Tidak, saya tidak punya"],
 		"type": "drivers_license"
 	},
