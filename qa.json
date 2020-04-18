@@ -1,11 +1,11 @@
 [
 	{
-		"question": ["hi", "hallo"],
+		"question": ["hi", "hallo", "halo"],
 		"answer": ["hallo", "hi juga", "hai, ada yang bisa dibantu?", "hallo apa kabar?"],
 		"type": "greeting"
 	},
 	{
-		"question": ["hallo apa kabar?"],
+		"question": ["apa kabar?"],
 		"answer": ["Aku baik baik saja"],
 		"type": "greeting"
 	},
@@ -15,18 +15,18 @@
 		"type": "greeting_answer"
 	},
 	{
-		"question": ["sangat buruk", "sedang sakit"],
+		"question": ["sangat buruk", "saya sedang sakit"],
 		"answer": ["periksalah ke dokter", "anda perlu periksa", "jagalah kesehatanmu"],
 		"type": "greeting_answer2"
 	},
 	{
 		"question": ["umur berapamu?", "umurmu berapa?", "umur?"],
-        "answer": [["Sebentar saya berfikir", "saya berusaha berfikir berapa umurku, tapi tidak tahu pasti"]],
+        "answer": ["mungkin kemarin", "Aku tidak tahu", ["Sebentar saya berfikir", "saya berusaha berfikir berapa umurku, tapi tidak tahu pasti"]],
         "type": "old"
 	},
 	{
 		"question": ["saya menginginkan", "saya beli sesuatu", "saya ingin membeli", "saya ingin beli", "saya butuh", "saya membutuhkan"],
-        "answer": ["Saya menemukan {{item}}", "{{item}} apakah ini yang maksud"],
+        "answer": ["Saya menemukan {{item}}", "{{item}} apakah ini yang cari"],
         "type": "question"
 	},
 	{
