@@ -21,11 +21,14 @@
   },
   "homepage": "https://github.com/alfaben12/hackathon-kmipn-2020#readme",
   "dependencies": {
+    "@ffmpeg-installer/ffmpeg": "^1.0.20",
     "@k3rn31p4nic/google-translate-api": "github:k3rn31p4nic/google-translate-api",
     "@touno-io/pdf": "^1.2.0",
     "compromise": "^13.1.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "ffmpeg-stream": "^0.6.0",
+    "fluent-ffmpeg": "^2.1.2",
     "g-i-s": "^2.1.5",
     "google-images": "^2.1.0",
     "moment": "^2.24.0",
@@ -34,6 +37,7 @@
     "nodejs-text-summarizer": "^2.0.3",
     "nodemon": "^2.0.2",
     "salient": "^0.2.1",
-    "scraperjs": "^1.2.0"
+    "scraperjs": "^1.2.0",
+    "videoshow": "^0.1.12"
   }
 }
