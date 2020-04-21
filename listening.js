@@ -83,7 +83,8 @@ app.post('/', async (req, res) => {
 	let query = req.body.query
 	pdf(dataBuffer).then(async function(data) {
 		data = data.text.replace(/(\r\n|\n|\r)/gm, "")
-		data = data.replace(/ +(?= )/g,'')
+		data = data.replace(/(\r\t|\t|\r)/gm,' ')
+		data = data.replace(/  +/g, ' ');
 		let paragraph_array = Tokenizer.splitSentence(data)
 		let split_sentence_array = paragraph_array.map(function(paragraph) {
 			natural.PorterStemmer.attach();
@@ -98,18 +99,18 @@ app.post('/', async (req, res) => {
 		for (let i = 0; i < split_sentence_array.length; i++) {
 			let sentence = split_sentence_array[i].sentence;
 			let split_sentence = split_sentence_array[i].split_sentence;
-			let split = split_sentence[0].split(" or ")[0];
+			// let split = split_sentence[0].split("or")[0];
 			let sentence_split = sentence.split(",");
 			let image = null
 			// if (i % 3 == 1) {
 				// image = await img(split)
 				// image = await get_google_image(split)
 			// }
-			console.log(i)
+			// console.log(split)
 			
 			data_result.push({
 				sentence: sentence_split,
-				split: split,
+				// split: split,
 				image: image,
 				question: await get_question(sentence)
 			})
