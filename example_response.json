@@ -1,0 +1,95 @@
+[
+    {
+        "sentence": "“The History of Indonesia” or more precisely of the Indonesian archipelago in South East Asia with 17,508 islands goes back to Homo erectus (popularly known as the \"Java Man\").",
+        "sentence_split": [
+            "“The History of Indonesia” or more precisely of the Indonesian archipelago in South East Asia with 17",
+            "508 islands goes back to Homo erectus (popularly known as the \"Java Man\")."
+        ],
+        "split": "“The History of Indonesia”",
+        "image": {
+            "url": "https://travelesia.id/wp-content/uploads/2018/09/Think-Indonesia-Borobudur-491627892-saiko3p-copy.jpg",
+            "width": 823,
+            "height": 1440
+        },
+        "question": [
+            {
+                "question": "“the ____ or more precisely of the indonesian archipelago in south east asia with 17,508 islands goes back to homo erectus (popularly known as the \"java man\").",
+                "answer": "History of Indonesia”"
+            },
+            {
+                "question": "“the history of indonesia” or more precisely of the ____ in south east asia with 17,508 islands goes back to homo erectus (popularly known as the \"java man\").",
+                "answer": "Indonesian archipelago"
+            },
+            {
+                "question": "“the history of indonesia” or more precisely of the indonesian archipelago in ____ with 17,508 islands goes back to homo erectus (popularly known as the \"java man\").",
+                "answer": "South East Asia"
+            },
+            {
+                "question": "“the history of indonesia” or more precisely of the indonesian archipelago in south east asia with 17,508 ____ goes back to homo erectus (popularly known as the \"java man\").",
+                "answer": "islands"
+            },
+            {
+                "question": "“the history of indonesia” or more precisely of the indonesian archipelago in south east asia with 17,508 islands goes back to ____ (popularly known as the \"java man\").",
+                "answer": "Homo erectus"
+            },
+            {
+                "question": "“the history of indonesia” or more precisely of the indonesian archipelago in south east asia with 17,508 islands goes back to homo erectus (popularly known as the ____",
+                "answer": "\"Java Man\")."
+            }
+        ]
+    },
+    {
+        "sentence": "There have been found fossilized remains of about one million years ago.",
+        "sentence_split": [
+            "There have been found fossilized remains of about one million years ago."
+        ],
+        "split": "There have been found fossilized remains of about one million years ago.",
+        "image": {
+            "url": "https://static01.nyt.com/images/2019/03/29/science/29KTDINOSAUR2/merlin_152794626_fef0ebf8-9cb5-4193-9b51-d43de5c70252-superJumbo.jpg",
+            "width": 1365,
+            "height": 2048
+        },
+        "question": [
+            {
+                "question": "there have been found fossilized remains of about one million ____",
+                "answer": "years ago."
+            }
+        ]
+    },
+    {
+        "sentence": "Austronesian people, who form the majority of the modern population, came to South East Asia from Taiwan.",
+        "sentence_split": [
+            "Austronesian people",
+            " who form the majority of the modern population",
+            " came to South East Asia from Taiwan."
+        ],
+        "split": "Austronesian people, who form the majority of the modern population, came to South East Asia from Taiwan.",
+        "image": {
+            "url": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/67/Early_stages_of_the_Austronesian_diaspora_showing_best-fit_genomic_proportions_of_Austronesian-speaking_peoples_in_ISEA_and_their_inferred_population_movements.png/330px-thumbnail.png",
+            "width": 177,
+            "height": 330
+        },
+        "question": [
+            {
+                "question": "austronesian ____ who form the majority of the modern population, came to south east asia from taiwan.",
+                "answer": "people,"
+            },
+            {
+                "question": "austronesian people, who form the ____ the modern population, came to south east asia from taiwan.",
+                "answer": "majority of"
+            },
+            {
+                "question": "austronesian people, who form the majority of the modern ____ came to south east asia from taiwan.",
+                "answer": "population,"
+            },
+            {
+                "question": "austronesian people, who form the majority of the modern population, came to ____ from taiwan.",
+                "answer": "South East Asia"
+            },
+            {
+                "question": "austronesian people, who form the majority of the modern population, came to south east asia from ____",
+                "answer": "Taiwan."
+            }
+        ]
+    }
+]

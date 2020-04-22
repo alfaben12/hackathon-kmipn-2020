@@ -88,4 +88,17 @@ $.ajax({
 		}
 	}
 	</script>
+
+	<!-- <script>
+		var msg = new SpeechSynthesisUtterance('Hello word, my name is alex brant, i live in liverpool, england.');
+		var voices = window.speechSynthesis.getVoices();
+		console.log(voices)
+		msg.voice = voices[32];
+		msg.rate = 1;
+		window.speechSynthesis.speak(msg);
+		
+		msg.onend = function(event) {
+			console.log(event.elapsedTime)
+		}
+	</script> -->
 	</html>
