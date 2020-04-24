@@ -158,6 +158,15 @@ app.get('/hello', async (req, res) => {
 	return res.json('hallo')
 });
 
+app.get('/readpdf', async (req, res) => {
+	pdf(dataBuffer).then(async function(data) {
+		text = data.text.replace(/(\r\n|\n|\r)/gm, "")
+		text = text.replace(/(\r\t|\t|\r)/gm,' ')
+		text = text.replace(/  +/g, ' ');
+		return res.json(text)
+	})
+});
+
 app.post('/', async (req, res) => {
 	let query = req.body.query
 	var dir = './files/'+ query;
