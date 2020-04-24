@@ -4,7 +4,7 @@ const pdf = require('@touno-io/pdf')
 const express = require('express')
 var natural = require('natural');
 const app = express()
-const port = 3000
+const port = process.env.PORT || 3000
 const GoogleImages = require('google-images');
 const nlp = require('compromise');
 var gis = require('g-i-s');
@@ -153,6 +153,11 @@ function create_audio(text, path) {
 		})
 	})
 }
+
+app.get('/hello', async (req, res) => {
+	return res.json('hallo')
+});
+
 app.post('/', async (req, res) => {
 	let query = req.body.query
 	var dir = './files/'+ query;

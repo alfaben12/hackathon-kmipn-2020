@@ -8,7 +8,7 @@
   "main": "nlp2.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon nlp2.js"
+    "start": "nodemon listening.js"
   },
   "repository": {
     "type": "git",
