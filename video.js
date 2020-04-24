@@ -41,15 +41,15 @@ ffmpeg.setFfmpegPath(ffmpegPath)
 
 let images = [
 	{
-	path: '/Users/macair4/Documents/Thariq/NODE/hackathon-kmipn-2020/img_lights.jpg',
+	path: '/Users/macair4/Documents/Thariq/NODE/hackathon-kmipn-2020/public/fixtures/step_1.png',
 	loop: 1.25
 },
 {
-	path: '/Users/macair4/Documents/Thariq/NODE/hackathon-kmipn-2020/img_lights.jpg',
+	path: '/Users/macair4/Documents/Thariq/NODE/hackathon-kmipn-2020/public/fixtures/step_2.png',
 	loop: 1.25
 },
 {
-	path: '/Users/macair4/Documents/Thariq/NODE/hackathon-kmipn-2020/img_lights.jpg',
+	path: '/Users/macair4/Documents/Thariq/NODE/hackathon-kmipn-2020/public/fixtures/step_3.png',
 	loop: 1.25
 }]
 

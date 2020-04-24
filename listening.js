@@ -18,7 +18,7 @@ var videoshow = require('videoshow')
 let ffmpegPath = require('@ffmpeg-installer/ffmpeg').path
 let ffmpeg = require('fluent-ffmpeg')
 ffmpeg.setFfmpegPath(ffmpegPath)
-
+app.use('/files', express.static('files'))
 app.use(cors());
 app.use(function(req, res, next) {
 	res.header('Access-Control-Allow-Origin', '*');
@@ -75,7 +75,7 @@ async function time_elapsed_speech(text) {
 	})
 }
 
-function resizingIMG(file, new_file, index){
+async function resizingIMG(file, new_file, index){
 	return new Promise((resolve, reject) => {
 		return sharp(file).resize({
 			height: 1080,
@@ -224,9 +224,9 @@ app.post('/resizeimg', async (req, res) => {
 		let file =  dir +'/'+ i +".png"
 		console.log(file)
 		let new_file = dir +'/'+ i +"-resizing.png"
-		resizingIMG(file, new_file, i)
+		await resizingIMG(file, new_file, i)
 	}
-	
+
 	return res.json('success')
 })
 
@@ -243,7 +243,6 @@ app.post('/createaudio', async (req, res) => {
 	for (let i = 0; i < json.length; i++) {
 		let time = await time_elapsed_speech(json[i].sentence)
 		time = time.toFixed(2)
-		console.log(time)
 		let result = {
 			sentence: {
 				sentence: json[i].sentence,
@@ -266,10 +265,10 @@ app.post('/createvideo', async (req, res) => {
 	let query = req.body.query
 	var dir = './files/'+ query;
 	let json = require(dir +"/data-complete.json")
-
+	
 	let images = []
 	let time = 0
-	for (let i = 0; i < json.length; i++) {
+	for (let i = 0; i < 2; i++) {
 		let dir_image = dir +"/"+ i +"-resizing.png"
 		images.push({
 			path: dir_image,
@@ -278,7 +277,7 @@ app.post('/createvideo', async (req, res) => {
 		})
 		time = time + parseFloat(json[i].sentence.time)
 	}
-
+	
 	console.log(images)
 	var videoOptions = {
 		fps: 25,
@@ -291,7 +290,7 @@ app.post('/createvideo', async (req, res) => {
 		format: 'mp4',
 		pixelFormat: 'yuv420p'
 	}
-	
+	console.log('continue')
 	videoshow(images, videoOptions)
 	.audio(dir + '/audio.wav')
 	.save(dir+ '/video.mp4')
@@ -304,6 +303,7 @@ app.post('/createvideo', async (req, res) => {
 	})
 	.on('end', function (output) {
 		console.error('Video created in:', output)
+		return res.json('success')
 	})
 })
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
