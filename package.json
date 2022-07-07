@@ -34,7 +34,7 @@
     "g-i-s": "^2.1.5",
     "google-images": "^2.1.0",
     "image-downloader": "^3.5.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "nalapa": "^1.11.0",
     "natural": "^0.6.3",
     "nodejs-text-summarizer": "^2.0.3",
